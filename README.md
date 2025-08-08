@@ -31,13 +31,13 @@ This final step delegates the entire reasoning task to the AI, allowing it to fi
 
 ### 1. Clone the Repository
 ```bash
-git clone <your-repo-url>
-cd <your-repo-folder>
+git clone <https://github.com/SudoAnxu/ppt_analyzer_ai>
+cd <ppt_analyzer_ai>
 ```
 
 ### 2. Install Dependencies
 ```bash
-pip install google-generativeai pillow pywin32
+pip install google-generativeai pillow pywin32 dotenv
 ```
 
 ### 3. Set Your API Key

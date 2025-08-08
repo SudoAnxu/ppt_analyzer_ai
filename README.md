@@ -31,8 +31,8 @@ This final step delegates the entire reasoning task to the AI, allowing it to fi
 
 ### 1. Clone the Repository
 ```bash
-git clone <https://github.com/SudoAnxu/ppt_analyzer_ai>
-cd <ppt_analyzer_ai>
+git clone https://github.com/SudoAnxu/ppt_analyzer_ai
+cd ppt_analyzer_ai
 ```
 
 ### 2. Install Dependencies
@@ -40,18 +40,13 @@ cd <ppt_analyzer_ai>
 pip install google-generativeai pillow pywin32 dotenv
 ```
 
-### 3. Set Your API Key
-For security, the script reads your API key from an environment variable. Do not hardcode it.
+### 3. Create Your Environment File
+This is the most important step for configuration.
+1.  In the project's root directory, find the file named `.env.example`.
+2.  Make a copy of this file and rename the copy to `.env`.
+3.  Open the new `.env` file and replace `"YOUR_API_KEY_GOES_HERE"` with your actual Google AI API key.
 
-**On Windows (Command Prompt):**
-```cmd
-set GOOGLE_API_KEY="YOUR_API_KEY_HERE"
-```
-
-**On macOS/Linux:**
-```bash
-export GOOGLE_API_KEY="YOUR_API_KEY_HERE"
-```
+The `.env` file is listed in `.gitignore` and should never be committed to your repository.
 
 ### 4. Execute the Script
 Run the agent from your terminal, providing the path to your presentation file or image folder.
